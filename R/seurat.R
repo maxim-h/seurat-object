@@ -2795,6 +2795,12 @@ WhichCells.Seurat <- function(
       fixed = TRUE
     )
     expr.char <- gsub(
+      pattern = ')',
+      replacement = '',
+      x = expr.char,
+      fixed = TRUE
+    )
+    expr.char <- gsub(
       pattern = '`',
       replacement = '',
       x = expr.char
